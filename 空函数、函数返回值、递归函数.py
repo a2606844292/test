@@ -42,7 +42,7 @@
 #     if y ==0:
 #         return 1
 #     else:
-#         return x*calc(x,y-1)  #不停的调用自己，太大会导致溢出
+# return x * calc(x, y - 1)  #2x(2,2)不停的调用自己，调用一次减去一个1，太大会导致溢出
 # print(calc(2,3))
 
 
