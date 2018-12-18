@@ -18,7 +18,7 @@
 #    if y==0:
 #       return 1
 #    res = x
-#   for i in range(y-1):
+#   for i in range(y):
 #        res *= x
 #    return res
 #print(my_pow(5,3))
