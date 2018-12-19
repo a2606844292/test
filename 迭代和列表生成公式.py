@@ -4,13 +4,13 @@
 
 import collections  # 导入模块
 
-# for i in ['tom', 'xiaobai', 'xxxx']:
+# for i in ['tom', 'xiaobai', 'xxxx']:#列表
 #     print(i, end=' ')
 #
-# for i in ("xiaobai", "xiaoming"):
+# for i in ("xiaobai", "xiaoming"):#元组
 #     print(i, end=' ')
 #
-# for k, v in {"name": "tom", 'age': 18, 'sex': 'male'}.items():
+# for k, v in {"name": "tom", 'age': 18, 'sex': 'male'}.items():#字典
 #     print(k, v)
 #
 # for i in 'hello':
