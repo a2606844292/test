@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>文本指令</title>
+	<script src="vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<p v-html="msg"></p>
+		<p v-text="msg1"></p>
+		
+	</div>
+	
+	<script>
+		new Vue({
+			el:'#app',
+			data:{
+				msg:'<h1>你好</h1>',
+				msg1:'<h1>你好</h1>'
+			}
+		})
+	</script>
+</body>
+</html>

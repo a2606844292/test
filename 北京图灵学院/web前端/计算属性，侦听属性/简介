@@ -1,0 +1,30 @@
+过滤器:
+	2.0版本取消了以前版本中内置得过滤器
+	格式 {{'hello'|过滤器名字}}
+
+	在vue实力当中使用filters
+	filaters:{
+		过滤器的名字:function(val){
+			return 
+		}
+	}
+
+	计算属性:
+		计算属性和方法的区别，和计算属性有缓存机制，当我们依赖的值没用发生改变，下一次读取时直接调用上一次计算的缓存结果
+		computed:{
+		属性:function(){
+			return
+		}
+	}
+
+	完整的计算属性的使用：
+		computed:{
+				b:{
+					get:function(){
+						return parseInt(this.a)+1
+					},
+					set:function(value){
+						return this.a = value
+					}	
+				}
+			},		

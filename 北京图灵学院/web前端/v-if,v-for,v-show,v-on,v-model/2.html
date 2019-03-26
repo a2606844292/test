@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>v-for</title>
+	<script src="vue.js"></script>
+</head>
+<body>
+	<div id='app'>
+		<ul>
+			<li v-for='i in arr'>{{i}}</li>
+		</ul>
+
+		<ul>
+			<li v-for='(v,index) in arr' :key='index'>{{v}}---->{{index}}</li>
+		</ul>
+
+		<ul>
+			<li v-for='(v,key,index) in obj'>{{key}}=====>>{{v}}=====>{{index}}</li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		new Vue({
+			el:'#app',
+			data:{
+				arr:['大白','小白','黑白'],
+				obj:{
+					name:'小白',
+					sex:'1',
+					len:'110cm'
+				}
+			}
+		})
+	</script>
+
+</body>
+</html>

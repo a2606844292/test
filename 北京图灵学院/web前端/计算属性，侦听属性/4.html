@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>监听属性</title>
+	<script type="text/javascript" src="vue.js"></script>
+</head>
+<body>
+	<div id='app'>
+		<input type="text" v-model='firstName'> 
+		<input type="text" v-model='lastName'> 
+		<br>
+		{{ fullName }}
+		<br>
+		{{num}}
+		<script>
+			new Vue({
+				el:'#app',
+				data:{
+					firstName:'',
+					lastName:'',
+					num:0
+				},
+				computed:{
+					fullName:function(){
+						return this.firstName+this.lastName
+					}
+				},
+				watch:{
+					fullName:function(){
+						this.num++
+					}
+				}
+			})
+	
+		</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>事件绑定</title>
+	<script src="vue.js"></script>
+</head>
+<style type="text/css">
+	.box1{
+		width: 200px;height: 200px;margin-left: background:pink;
+	}
+</style>
+<body>
+	<div id='app'>
+		<button v-on:mouseover='al'>点击</button>
+		<input @keydown='down'>
+
+	</div>
+	
+	<script>
+		new Vue({
+			el:'#app',
+			data:{
+				msg:'ok'
+			},
+			//主要来写函数方法
+			methods:{
+				al:function(){
+					alert(this.msg)
+				},
+				down:function(){
+					//alert('你按下了键盘')
+					console.log('你按下了1')
+				}
+			}
+		})
+	</script>
+</body>
+</html>

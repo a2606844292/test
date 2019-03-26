@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>模板语法</title>
+	<script src="vue.js"></script>
+</head>
+<body>
+	<div id='app'>
+		<p>{{msg}}</p>
+		<p>{{str}}</p>
+		<p>{{obj}}</p>
+		<p>{{arr}}</p>
+		<p>{{1+1}}</p>
+		<p>{{1>0?'判断成功':'判断失败'}}</p>
+		
+	</div>
+	<script>
+		new Vue({
+			el:'#app',
+			data:{
+				msg:12,
+				str:'123',
+				obj:{name:'小白'},
+				arr:['a','b','c'],
+			}
+		})
+	</script>
+</body>
+</html>
