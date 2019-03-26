@@ -1,0 +1,17 @@
+.item1{
+    height: 20px;
+    width: auto;
+    background-color: #266EBA;
+
+}
+#box1{
+    height: 20px;
+    width: auto;
+    background-color: #666666;
+
+}
+
+.tab{
+
+    border: black solid;
+}
